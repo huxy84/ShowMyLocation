@@ -1,0 +1,16 @@
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.MainPage.xaml.g.cs
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.App.xaml.g.cs
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.Views.LocationView.xaml.g.cs
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.dll
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.pdb
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\obj\Debug\ShowMyLocation.csprojResolveAssemblyReference.cache
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\ShowMyLocation.dll
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\ShowMyLocation.pdb
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Core.dll
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Core.xml
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Development\Xamarin\ShowMyLocation\ShowMyLocation\ShowMyLocation\bin\Debug\Xamarin.Forms.Xaml.xml

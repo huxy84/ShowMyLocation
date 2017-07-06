@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowMyLocation.Views.LocationView"
+             xmlns:vm="clr-namespace:ShowMyLocation.ViewModels"
+             BackgroundColor="#303030"
+>
+    <ContentPage.BindingContext>
+        <vm:LocationViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <!--<Grid.Resources>
+                <Style x:Key="labelStyle" TargetType="Label">
+                    <Setter Property="Label.TextColor" Value="White" />
+                    <Setter Property="Label.BackgroundColor" Value="#303030" />
+                </Style>
+            </Grid.Resources>-->
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*" />
+                <ColumnDefinition Width="0.5*" />
+            </Grid.ColumnDefinitions>
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="Get Current Location"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                HorizontalOptions="CenterAndExpand"
+                Command="{Binding GetLocationCommand}"
+            />
+
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="0, 10, 0, 5"
+                Text="Current Location"
+                TextColor="White"
+                BackgroundColor="Transparent"
+                HorizontalOptions="CenterAndExpand"
+            />
+
+            <!--<StackLayout Orientation="Horizontal">-->
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="Timestamp"
+                 />
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="{Binding Timestamp}"
+                 />
+            <!--</StackLayout>-->
+            
+            <!--<StackLayout Orientation="Horizontal">-->
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="Distance Travelled"
+                 />
+
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="{Binding DistanceTravelled}"
+                 />
+            <!--</StackLayout>-->
+
+            <!--<StackLayout Orientation="Horizontal">-->
+                <Label
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="Latitude"
+                 />
+
+                <Label
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="{Binding Latitude}"
+                 />
+            <!--</StackLayout>-->
+
+            <!--<StackLayout Orientation="Horizontal">-->
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="Longitude"
+                 />
+
+                <Label
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    TextColor="White"
+                    BackgroundColor="Transparent"
+                    Text="{Binding Longitude}"
+                 />
+            <!--</StackLayout>-->
+
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                TextColor="White"
+                Grid.ColumnSpan="2"
+                Margin="0, 10, 0, 5"
+                Text="All Recorded Locations"
+                BackgroundColor="Transparent"
+                HorizontalOptions="CenterAndExpand"
+            />
+
+            <ScrollView VerticalOptions="FillAndExpand" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2">
+                <ListView x:Name="coordinates" ItemsSource="{Binding Coordinates}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" TextColor="White" BackgroundColor="Transparent" Text="{Binding Timestamp}" />
+                                    <Label Grid.Column="1" TextColor="White" BackgroundColor="Transparent" Text="{Binding Latitude, StringFormat=' ({0}, '}" />
+                                    <Label Grid.Column="2" TextColor="White" BackgroundColor="Transparent" Text="{Binding Longitude, StringFormat='{0})'}" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
